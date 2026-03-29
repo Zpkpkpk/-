@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  --font-label: "Plus Jakarta Sans", sans-serif;
+
+  --color-primary: #8c4a00;
+  --color-primary-dim: #7b4000;
+  --color-primary-fixed: #fd8b00;
+  --color-primary-fixed-dim: #ea8000;
+  --color-primary-container: #fd8b00;
+  --color-on-primary: #fff0e7;
+  --color-on-primary-container: #442100;
+  --color-on-primary-fixed: #180800;
+  --color-on-primary-fixed-variant: #512800;
+
+  --color-secondary: #006386;
+  --color-secondary-dim: #005675;
+  --color-secondary-fixed: #9adaff;
+  --color-secondary-fixed-dim: #71ceff;
+  --color-secondary-container: #9adaff;
+  --color-on-secondary: #e7f5ff;
+  --color-on-secondary-container: #004d69;
+  --color-on-secondary-fixed: #00394f;
+  --color-on-secondary-fixed-variant: #005776;
+
+  --color-tertiary: #6c5a00;
+  --color-tertiary-dim: #5e4e00;
+  --color-tertiary-fixed: #ffd709;
+  --color-tertiary-fixed-dim: #efc900;
+  --color-tertiary-container: #ffd709;
+  --color-on-tertiary: #fff2cd;
+  --color-on-tertiary-container: #5b4b00;
+  --color-on-tertiary-fixed: #453900;
+  --color-on-tertiary-fixed-variant: #665500;
+
+  --color-surface: #fff5ed;
+  --color-surface-dim: #ffcb93;
+  --color-surface-bright: #fff5ed;
+  --color-surface-variant: #ffd6ab;
+  --color-on-surface: #452800;
+  --color-on-surface-variant: #7a5426;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #ffeedf;
+  --color-surface-container: #ffe4c9;
+  --color-surface-container-high: #ffddba;
+  --color-surface-container-highest: #ffd6ab;
+
+  --color-outline: #986f3f;
+  --color-outline-variant: #d4a46f;
+
+  --color-error: #b02500;
+  --color-error-dim: #b92902;
+  --color-error-container: #f95630;
+  --color-on-error: #ffefec;
+  --color-on-error-container: #520c00;
+
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body antialiased;
+  }
+}
+
+.kinetic-shadow {
+  box-shadow: 0 20px 40px rgba(69, 40, 0, 0.08);
+}
+
+.glass-effect {
+  @apply backdrop-blur-xl bg-white/70 border border-white/40;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
